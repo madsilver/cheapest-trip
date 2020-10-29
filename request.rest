@@ -1,0 +1,15 @@
+@url=http://localhost:9000
+
+### Get route
+GET {{url}}/routes?route=SCL-CDG
+
+### POST route
+POST {{url}}/routes
+Content-Type: application/json
+
+{
+	"departure": "SCL",
+	"arrival": "CDG",
+	"cost": 1
+}
+
